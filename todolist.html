@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css 연결 -->
+  <link rel="stylesheet" href="css/css.css">
+  <script defer src="js/side-menu.js"></script>
+
+  <!-- 부트스트렙5 연결 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <section class="header-main">
+      <div class="inner">
+        <video class="video" src="img/메인.mp4" id="vdo" autoplay muted loop></video>
+        <div class="main-banner">
+          <!-- <span class="main-txt">JHweather</span> -->
+          <a href="index.html"><img src="img/JHweather.png" alt=""></a>
+          <div class="search">
+            <div class="input-group mb-3">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                style="background-color: white"><i class="bi bi-search"></i></button>
+              <input type="text" class="form-control" placeholder="지역입력" aria-describedby="button-addon1">
+            </div>
+            <div class="menu">
+              <button class="btn float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+                <i class="bi bi-list" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <section class="side-menu">
+      <div class="offcanvas offcanvas-end w-10" tabindex="-1" id="offcanvas" data-bs-keyboard="false"
+        data-bs-backdrop="false">
+        <div class="offcanvas-header">
+          <i class="bi bi-person-circle"></i> 
+          <h6>로그인을 해주세요</h6>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0">
+          <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-truncate"></a>
+                <a class="btn btn-primary" href="login.html" role="button">로그인</a>
+            </li>
+            <li>
+              <a href="#" data-bs-toggle="collapse" class="nav-link text-truncate"></a>
+                <a class="btn btn-primary" href="memberjoin.html" role="button">회원가입</a>
+            </li>
+            <li class="side-search">
+              <div class="input-group mb-3">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                  style="background-color: white"><i class="bi bi-search"></i></button>
+                <input type="text" class="form-control" placeholder="지역입력" aria-label="Example text with button addon"
+                  aria-describedby="button-addon2">
+              </div>
+            </li>
+            <li>
+              <a href="todolist.html" class="nav-link text-truncate">
+                <h3>오늘의 할일 바로가기</h3>
+              </a>
+            </li>
+            <li>
+              <a href="list.html" class="nav-link text-truncate">
+                <h3>공지사항 바로가기</h3>
+              </a>
+            </li>
+            <li>
+              <a href="list.html" class="nav-link text-truncate">
+                <h3>게시판 바로가기</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class="todo">
+    <div class="todolist">
+      <section class="b">
+        <h1>To Do List</h1>
+        <h2>2022년12월20일</h2>
+      </section>
+        <section class="todolist-button">
+          <button>전체 : 0</button>
+          <button>진행중 : 0</button>
+          <button>완료 : 0</button>
+        </section>
+    </div>
+    <div class="todolist-text">
+      <section class="todo-text">
+        <input class="text" type="text" placeholder="오늘 할 일 !! ">
+        <i class="bi bi-file-plus"></i>
+      </section>
+      <section class="a">
+        <div>
+          <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+          <label for="">todo list 완성</label>
+          <i class="bi bi-trash"></i>
+        </div>
+        <div>
+          <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+          <label for="">점심먹기 ㅎㅎ</label>
+          <i class="bi bi-trash"></i>
+        </div>
+        <div>
+          <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+          <label for="">학원 끝나고 등운동 하기</label>
+          <i class="bi bi-trash"></i>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+
+
+
+</body>
+
+</html>

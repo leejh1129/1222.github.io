@@ -1,0 +1,100 @@
+.test{
+  /* border: 2px solid black; */
+  border-radius:10px;
+}
+.side-menu>.offcanvas>.offcanvas-body>.test{
+  width: 100%; height: 800px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.side-menu>.offcanvas>.offcanvas-body>.test>.todolist>.b>h1{
+  font-size: 24px;
+}
+.side-menu>.offcanvas>.offcanvas-body>.test>.todolist>.b>h2{
+  font-size: 16px;
+  margin-top: 12px;
+}
+.side-menu>.offcanvas>.offcanvas-body>.test>.todolist{
+  width: 90%; height: 20%;
+  background-color: bisque;
+  border-radius:10px;
+}
+.side-menu>.offcanvas>.offcanvas-body>.test>.todolist>.b{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.side-menu>.offcanvas>.offcanvas-body>.test>.todolist>.todolist-button{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  height: 50%;
+}
+.side-menu>.offcanvas>.offcanvas-body>.test>.todolist>.todolist-button>button{
+  width: 30%; height: 30px;
+  font-size: 16px;
+  border-radius:10px;
+  border: 0px solid white;
+}
+.side-menu>.offcanvas>.offcanvas-body>.test>.todolist-text{
+  font-size: 16px;
+  width: 90%; height: 100%;
+  background-color: white;
+  border-radius:10px;
+}
+.side-menu>.offcanvas>.offcanvas-body>.test>.todolist-text>.todo-text{
+  width: 100%;height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.side-menu>.offcanvas>.offcanvas-body>.test>.todolist-text>.todo-text>.bi-file-plus{
+  font-size: 30px;
+  margin-top: -9px;
+  margin-left: -5px;
+  color: bisque;
+}
+.side-menu>.offcanvas>.offcanvas-body>.test>.todolist-text>.todo-text>input{
+  width: 95%;
+  height: 30px;
+  border-radius:10px;
+  border: 3px solid bisque;
+}
+.side-menu>.offcanvas>.offcanvas-body>.test>.todolist-text>.a{
+  display: flex;
+  flex-direction: column;
+}
+/* .side-menu>.offcanvas>.offcanvas-body>.test>.todolist-text>.a>ul{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 5px dotted bisque
+} */
+.side-menu>.offcanvas>.offcanvas-body>.test>.todolist-text>.a>ul>li{
+  display: flex;
+  align-items:center;
+  border-bottom: 5px dotted bisque
+}
+.side-menu>.offcanvas>.offcanvas-body>.test>.todolist-text>.a>ul>li>*:nth-child(2){
+  flex-grow:1;
+  margin:0px 10px;
+}
+.side-menu>.offcanvas>.offcanvas-body>.test>.todolist-text>.a>.ul{
+  padding-left: 0;
+}
+/* .side-menu>.offcanvas>.offcanvas-body>.test>.todolist-text>.a>div>label{
+  width: 90%;
+  padding-left: 10px;
+} */
+/* header>.header-main>.inner>.video{
+  position: absolute;
+  width: 100%;
+  clip: rect( 0, 1980px, 110px, 0);
+} */
